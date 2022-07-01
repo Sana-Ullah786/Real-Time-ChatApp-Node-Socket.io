@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Chat Box</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="chatBox">
+        <div class="nav">
+          <div class="logo">
+            <img src="./logo.png" alt="logo" />
+          </div>
+          <div class="heading">
+            <h1>Let's Chat</h1>
+          </div>
+        </div>
+        <div class="chatBody"></div>
+        <div class="chatBar">
+          <div class="chatInput">
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Type your message here"
+              maxlength="250"
+              size="150"
+            />
+          </div>
+          <!-- add font awesome icon for sendign message -->
+          <div class="chatSend">
+            <img id="sendIcon" src="./send.png" alt="send" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
